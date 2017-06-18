@@ -1,0 +1,63 @@
+{% extends 'event/base.html' %}
+{% block content %}
+<div class = "fests">
+		<!-- <div class="fest_header">
+			<h1>FESTS MUJ</h1>
+		</div> -->
+		<div class="path">
+			<div id="fest_img">
+				<img src="https://i.ytimg.com/vi/jWuy6zbpsXs/maxresdefault.jpg" height="400" width="700" align="middle" id="img">
+			</div>
+		</div>			
+		<script type="text/javascript">	
+				function myMove() {
+						
+
+
+					var elem = document.getElementById("fest_img");
+					var op = 1;
+					var count =0;
+					var id = setInterval(frame, 10);
+					function frame() {
+						if (op<=0) {
+							count++;
+							elem.style.opacity = 1;
+							document.getElementById("img").src = "https://jaipur.manipal.edu/content/dam/manipal/muj/images/galleryImage/news/xabhivarta-collage.jpg.pagespeed.ic.UOs2p9Bthi.jpg";
+
+							clearInterval(id);
+
+							var src;
+							switch(count%5){
+								case 0:
+									src = "https://i.ytimg.com/vi/jWuy6zbpsXs/maxresdefault.jpg";
+									break;
+								case 1:
+									src = "https://jaipur.manipal.edu/content/dam/manipal/muj/images/galleryImage/news/xabhivarta-collage.jpg.pagespeed.ic.UOs2p9Bthi.jpg";
+									break;
+								case 2:
+									src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYy6N8aAMdtfbLVlvQVIpH3Xe2Nqf0M7uYKO7POZcHZo3EUAZ1kw";
+									break;
+								case 3:
+									src="http://knowafest.com/files/uploads/16463100_714639732033409_3817158181472003867_o-2017030502.jpg";
+									break;
+								case 4:
+									src = "https://pbs.twimg.com/profile_images/692886914949492736/yJN2lVRT.jpg"
+									break;
+							}
+
+						} 
+
+						elem.style.opacity = op;
+						elem.style.filter = 'alpha(opacity=' + op * 100 + ")";
+						op -= op*0.1 ;
+
+					}
+				}
+				setTimeout(myMove, 1000);
+				// myMove();
+
+		</script>
+		
+		
+</div>
+	{% endblock content %}
