@@ -1,0 +1,18 @@
+{% extends 'event/base.html' %}
+{% block content %}
+    <!--<a href="http://127.0.0.1:8000/events/add" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>-->
+    {% for event in events %}
+    <div class="event_list">
+        <div class="date">
+            <p>{{ event.start_time }}</p>
+        </div>
+        <div class="list_item_header">
+            <h1> {{ event.name }} </h1>
+            <br> <p class="club_name">{{ event.club }}</p>
+        </div>
+        <div class="image_event_list">
+            <img src='{{ event.poster1 }}' height="200" width="200" align="middle">
+        </div>
+    </div>
+    {% endfor %}
+{% endblock content %}

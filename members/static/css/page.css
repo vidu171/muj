@@ -1,0 +1,90 @@
+h1 a {
+	color: #ffffff;
+	
+	background-size: all;
+}
+h1 {
+    color: #00CDCD;
+}
+p {
+    color: #ffffff;
+}
+
+.page_header{
+    box-shadow: 0 0 6px #000;
+	background-image: url("img.jpg");
+	background-repeat: no-repeat;
+	background-size: all;
+	background-position: -40px -700px;
+	 margin-top: 0;
+    padding: 20px 20px 60px 40px;
+}
+.page_header h1, .page_header h1 a, .page_header h1 a:visited, .page_header h1 a:active {
+    color:    #ffffff  ;
+    font-size: 60pt;
+    text-decoration: none;
+    text-align: center;
+}
+
+.head_list ul{
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	background-color: #B2B2C1;
+
+}
+
+.head_list li{
+	float: left;
+	width: 20%;
+
+
+}
+.head_list li a{
+	display: block;
+	color: #111111;
+	font-size: 18px;
+	text-align: center;
+	padding: 16px;
+
+}
+.head_list li a:hover {
+   background-color: #111111; 
+   color: #ffffff;
+
+}
+.fest_header h1{
+	color: #ffffff;
+	text-align: center;
+}
+.path {
+	width: 1140px;
+	height: 400px;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 200px;
+
+}
+
+.list_item_header{
+    float: left;
+}
+
+.event_list{
+    margin-bottom: 200px
+}
+
+.image_event_list{
+    float: right;
+}
+#fest_img {
+	text-align: center;
+	
+	margin-top: 0px;
+	margin-bottom: 200px;
+
+}
+body {
+	background:   #17202a ;
+
+}
